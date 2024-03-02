@@ -1,11 +1,11 @@
-class TodoItem {
+class Task {
   #id;
-  #message;
+  #task;
   #markedStatus;
 
-  constructor(id, message) {
+  constructor(id, task) {
     this.#id = id;
-    this.#message = message;
+    this.#task = task;
     this.#markedStatus = false;
   }
 
@@ -14,7 +14,7 @@ class TodoItem {
   }
 
   get message() {
-    return this.#message;
+    return this.#task;
   }
 
   get markedStatus() {
@@ -26,4 +26,4 @@ class TodoItem {
   }
 }
 
-module.exports = { TodoItem };
+module.exports = { Task };
